@@ -155,7 +155,6 @@ public class GoogleSignInFragment extends Fragment implements
     GoogleSignInFragment fragment =
         (GoogleSignInFragment) parentActivity.getFragmentManager().findFragmentByTag(FRAGMENT_TAG);
 
-    fragment = (fragment != null) ? fragment : theFragment;
     if (fragment == null) {
       GoogleSignInHelper.logDebug("Creating fragment");
       fragment = new GoogleSignInFragment();
